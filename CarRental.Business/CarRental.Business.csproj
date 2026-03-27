@@ -7,24 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Validators\" />
-    <Folder Include="Services\" />
     <Folder Include="DTOs\" />
     <Folder Include="DTOs\Auth\" />
     <Folder Include="DTOs\Car\" />
     <Folder Include="DTOs\Booking\" />
     <Folder Include="Mappings\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Validators\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="16.1.1" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.1.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CarRental.DataAccess\CarRental.DataAccess.csproj" />
     <ProjectReference Include="..\CarRental.Domain\CarRental.Domain.csproj" />
   </ItemGroup>
 

@@ -12,7 +12,8 @@ namespace CarRental.Domain.Enums
     public enum UserRole { User, Admin }
 
     // Domain/Enums/CarStatus.cs
-    public enum CarStatus { Available, Booked, UnderMaintenance }
+    // Domain/Enums/CarStatus.cs
+    public enum CarStatus { Available, Booked, Ongoing, UnderMaintenance }
 
     // Domain/Enums/CarCategory.cs
     public enum CarCategory { Sedan, SUV, Hatchback, Coupe, Van, Truck }
