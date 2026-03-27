@@ -20,5 +20,6 @@ namespace CarRental.Business.DTOs.Car
         public int Seats { get; set; }
         public TransmissionType Transmission { get; set; }
         public FuelType FuelType { get; set; }
+        public List<CarImageDto> Images { get; set; } = new();
     }
 }

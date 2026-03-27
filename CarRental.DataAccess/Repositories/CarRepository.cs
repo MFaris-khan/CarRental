@@ -26,6 +26,7 @@ public class CarRepository : ICarRepository
     {
         return await _context.Cars
             .Include(c => c.Images)
+            .Include(c => c.Owner)
             .Where(c => c.OwnerId == ownerId)
             .ToListAsync();
     }

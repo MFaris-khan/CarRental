@@ -54,7 +54,13 @@ public class CarService : ICarService
             FuelType = dto.FuelType,
             OwnerId = ownerId,
             Status = CarStatus.Available,
-            CreatedAt = DateTime.UtcNow
+            CreatedAt = DateTime.UtcNow,
+
+            Images = dto.Images.Select(i => new CarImage
+            {
+                ImageUrl = i.ImageUrl,
+                IsPrimary = i.IsPrimary
+            }).ToList()
         };
 
         await _carRepository.AddAsync(car);
